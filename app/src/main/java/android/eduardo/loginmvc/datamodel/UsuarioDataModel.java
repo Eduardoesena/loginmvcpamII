@@ -9,7 +9,7 @@ public class UsuarioDataModel {
 
     public static  String queryCriarTabela = "";
     public String criarTabela = "";
-    public String criarTabela(){
+    public static String criarTabela(){
         queryCriarTabela += "CREAT TABELA" + TABELA + "(";
         queryCriarTabela += ID+ "int primary key autoincrement";
         queryCriarTabela += NOME + " text,";
@@ -17,5 +17,6 @@ public class UsuarioDataModel {
         queryCriarTabela += SENHA + " text,";
         queryCriarTabela += ")";
 
+        return queryCriarTabela;
     }
 }
